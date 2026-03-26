@@ -1,0 +1,734 @@
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1012.8px;
+  min-height: 600.8px;
+  display: flex;
+}
+
+.container .img {
+  width: 1012.8px;
+  height: 3401.8px;
+}
+/* =============================================
+   ORIGINAL CSS INJECTION POINT
+   The original style.css content is injected here automatically.
+   ============================================= */
+
+/* =============================================
+   GLOBAL RESET & BASE
+   ============================================= */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1012.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Visually hidden utility for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+
+  background: transparent; /* QUAN TRỌNG */
+  z-index: 10;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-brand-name {
+  width: 300px;
+  height: 50px;
+}
+
+.navbar-center {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar-search-input {
+  width: 100%;
+  height: 28px;
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 10px;
+  outline: none;
+  
+}
+
+.navbar-search-input::placeholder {
+  color: #888888;
+}
+
+.navbar-right {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero {
+  position: relative;
+  
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 40px 40px 40px 40px;
+
+  background: url("img/background.webp") center/cover no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* chỉnh 0.5–0.7 tùy bạn */
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+.hero-label {
+  color: #aaaaaa;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.hero-title-line1 {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.hero-title-line2 {
+  background-color: #e8b800;
+  color: #1a1a1a;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  display: inline-block;
+}
+
+.hero-description {
+  color: #cccccc;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-btn-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.btn-shop-now {
+  background-color: #e8b800;
+  color: #1a1a1a;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-dropdown {
+  background-color: #c9a000;
+  color: #1a1a1a;
+  border: none;
+  font-size: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.hero-lookbook-link {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-shoe-image {
+  width: 320px;
+  object-fit: contain;
+}
+
+.hero-brand-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  z-index: 2;
+}
+
+.hero-adidas-logo {
+  width: 80px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+/* =============================================
+   TRUST BADGES
+   ============================================= */
+.trust-badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #151515;
+  padding: 18px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-badge-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.trust-badge-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.trust-badge-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.trust-badge-subtitle {
+  font-size: 11px;
+  color: #666666;
+}
+
+/* =============================================
+   CATEGORIES
+   ============================================= */
+/* Container chính */
+.categories {
+  display: flex;
+  width: 100%;
+  gap: 12px; /* Khoảng cách nhỏ giữa các cột như trong ảnh */
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Từng thẻ card */
+.category-card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #000; /* Đảm bảo phần dưới luôn đen */
+}
+
+/* Ảnh - Quan trọng: Chỉnh tỉ lệ khung hình */
+.category-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.2; /* Chỉnh ảnh hơi dọc một chút giống mẫu */
+  object-fit: cover;
+  display: block;
+}
+
+/* Phần nội dung màu đen bên dưới */
+.category-overlay {
+  background: #000;
+  padding: 24px 16px; /* Tăng padding để thoáng hơn */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Dòng chữ nhỏ màu vàng */
+.category-label {
+  color: #c5a059; /* Màu vàng đồng (Gold) trầm giống mẫu */
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: none; /* Giữ nguyên hoa thường theo mẫu */
+}
+
+/* Tên danh mục (Performance, Streetwear...) */
+.category-name {
+  color: #ffffff;
+  font-size: 26px; /* Font chữ to và thanh mảnh */
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Link Explore */
+.category-explore-link {
+  color: #ffffff;
+  font-size: 13px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đẩy mũi tên sang bên phải */
+  margin-top: 15px;
+  width: fit-content;
+  gap: 40px; /* Tạo khoảng cách rộng với mũi tên */
+  transition: opacity 0.2s;
+}
+
+.category-explore-link:hover {
+  opacity: 0.7;
+}
+
+/* Mũi tên */
+.category-explore-link span {
+  font-size: 18px;
+}
+
+/* =============================================
+   FEATURED COLLECTION
+   ============================================= */
+.featured-collection {
+  padding: 48px 40px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.featured-collection-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.featured-collection-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.featured-collection-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.featured-collection-subtitle {
+  font-size: 12px;
+  color: #666666;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.featured-collection-view-all {
+  font-size: 12px;
+  color: #1a1a1a;
+  text-decoration: underline;
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 0 0 calc(25% - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-image-wrapper {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 6/ 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image-wrapper--yellow {
+  background-color: #e8b800;
+}
+
+.product-image {
+  width: 100%;       
+  height: 100%;    
+  object-fit: cover; 
+  display: block;
+  padding: 0;
+}
+
+.btn-add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.product-image-wrapper:hover .btn-add-to-cart {
+  opacity: 1;
+}
+
+.cart-icon-small {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.product-brand {
+  font-size: 11px;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.product-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* =============================================
+   NEWSLETTER / JOIN THE MOVEMENT
+   ============================================= */
+.newsletter {
+  background-color: #1a1a1a;
+  width: 100%;
+  padding: 72px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+}
+
+.newsletter-title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.newsletter-subtitle {
+  color: #aaaaaa;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.newsletter-form {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.newsletter-input-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border-bottom: 1px solid #555555;
+}
+
+.newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #666666;
+  letter-spacing: 1px;
+}
+
+.newsletter-submit {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-disclaimer {
+  font-size: 10px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.newsletter-link {
+  color: #888888;
+  text-decoration: underline;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background-color: #111111;
+  width: 100%;
+  padding: 48px 40px 24px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.footer-brand {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-brand-name {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.footer-brand-tagline {
+  color: #888888;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0) invert(0.6);
+}
+
+.footer-nav {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-title {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav-link {
+  color: #888888;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.footer-nav-link:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+.footer-copyright {
+  color: #555555;
+  font-size: 11px;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-legal-link {
+  color: #555555;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.footer-legal-link:hover {
+  color: #888888;
+}
